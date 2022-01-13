@@ -26,7 +26,7 @@ def notify_user():
         body = 'Do something for resovle!'
         msg = f'Subject: {subject}\n\n{body}'
         logging.info('Sending Email...')
-        smtp.sendmail(EMAIL_ADDRESS, 'ktk@rcompany.kz', msg)
+        smtp.sendmail(EMAIL_ADDRESS, 'login@domain.com', msg)
 def mbox(text, title, style):
     return ctypes.windll.user32.MessageBoxW(0, text, title, style)
 
